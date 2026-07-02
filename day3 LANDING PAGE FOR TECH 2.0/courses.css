@@ -1,0 +1,24 @@
+.course-grid{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.course-card{
+    width:250px;
+    padding:20px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    text-align:center;
+    text-decoration:none;
+    color:black;
+    background:white;
+    transition:.3s;
+}
+
+.course-card:hover{
+    background:#00bcd4;
+    color:white;
+    transform:scale(1.05);
+}
