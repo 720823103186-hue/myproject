@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR - FLEXBOX */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #130606;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+/* HERO - FLEXBOX */
+.hero {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #101315, #090a0a);
+    color: white;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: rgb(251, 250, 250);
+    color: rgb(6, 6, 6);
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+/* FEATURES - GRID */
+.features {
+    padding: 50px;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    padding: 20px;
+    border: 1px solid #160404;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(247, 3, 3, 0.944);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    color: white;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+.grid{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:250px;
+    padding:20px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    text-align:center;
+    text-decoration:none;
+    color:black;
+    background:white;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:scale(1.05);
+    background:#041517;
+    color:white;
+}
